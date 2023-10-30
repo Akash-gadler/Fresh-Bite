@@ -1,0 +1,27 @@
+<apex:page controller="CustomerRecord" lightningStylesheets="true"  >
+    <apex:form >
+       <apex:pageBlock >
+           <apex:pageBlockSection >
+           <apex:inputText value="{!Name}" label="Name"/>
+           <apex:inputText value="{!CustomerMail}" label="Mail Id"/>
+             <apex:inputText value="{!Phone}" label="Phone"/>
+                
+         <apex:selectList label="Category" value="{!Category}" size="1">
+           <apex:selectOption itemValue="" itemLabel=""/>
+           <apex:selectOption itemValue="Breakfast" itemLabel="Breakfast"/>
+           <apex:selectOption itemValue="Lunch" itemLabel="Lunch"/>
+           <apex:selectOption itemValue="Snacks" itemLabel="Snacks"/>           
+           </apex:selectList>  
+           <apex:selectList label="FoodName" value="{!FoodName}" size="1">
+           <apex:selectOption itemValue="" itemLabel=""/>
+           <apex:selectOption itemValue="Samosa" itemLabel="Samosa"/>
+           <apex:selectOption itemValue="Sandwhich" itemLabel="Sandwhich"/>
+           <apex:selectOption itemValue="Veg puff" itemLabel="Veg puff"/>           
+           </apex:selectList>  
+             
+           <apex:inputText value="{!Quantity}" label="Quantity"/>
+           <apex:commandButton value="SUBMIT" action="{!CustomerRecord}" />
+           </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

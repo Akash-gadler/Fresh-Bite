@@ -1,0 +1,548 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh bites
+</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/3b8e89b62d.js" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap'); */
+
+
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap'); */
+.card{
+  padding: 0%;
+      height: fit-content;
+}
+.image
+{
+  width:100%;
+  position: relative;
+    filter: brightness(0.5);
+    object-fit:scale-down;
+
+    transition:2s;
+}
+.image:hover{
+  transform: scale(1.2);
+}
+.active1{
+  position: absolute;
+    text-align: center;
+    padding: 30%;
+    padding-top: 50%;
+    color: white;
+}
+.text-sub{
+  position: absolute;
+    top: 42%;
+    left: 30%;
+    color: white;
+    text-align: center;
+}
+.subimg{
+  ;
+    transition:2s;
+}
+.subimg:hover{
+    filter: brightness(1);
+}
+.img-thumbnail{
+  margin: 0% 2% 0% 2%;
+}
+/* .nav-item:hover{
+  background-color: black;
+} */
+.modal-content {
+{
+
+}
+.value{
+  font-weight:200 !important;
+}
+</style>
+
+
+
+</head>
+<body style="background-color:#FFF5EE">
+<div class="row" style="width:100%;height:fit-content;align-items:center;background-color:transparent;margin: 0%;">
+  <nav class="navbar navbar-expand-lg bg-light" style="background-color:#EFDFBB!important;padding-bottom:0%;
+    padding-top:0%;padding-left:10%;padding-right:10%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="https://media.discordapp.net/attachments/642673377647263745/996298269011492904/Frame_5.png" alt=""> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="width: 100%;
+    display: flex !important;
+    justify-content: flex-end;">
+        <ul class="navbar-nav" style="width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-gap: 2em;padding-bottom: 2%;
+    padding-top: 2%;">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" style="color: #FDA100;font-family: 'Ubuntu Mono', monospace;font-size:150%;letter-spacing: -2px;-" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #FDA100;font-family: 'Ubuntu Mono', monospace;font-size:150%;letter-spacing: -2px;-" href="#">Dishes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #FDA100;font-family: 'Ubuntu Mono', monospace;font-size:150%;letter-spacing: -2px;-" href="#">Available Now</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="row" style="width:100%;height:fit-content;padding:0%;margin:0%;">
+  <div id="carouselExampleControls" style="padding:0%;margin:0%;" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.discordapp.com/attachments/642673377647263745/997486404181434389/unknown.png?width=1440&height=520" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.discordapp.com/attachments/642673377647263745/997486403887824957/unknown.png?width=1440&height=520" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.discordapp.com/attachments/642673377647263745/997486404466651257/unknown.png?width=1440&height=520" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.discordapp.com/attachments/642673377647263745/997486403535507526/unknown.png?width=1440&height=520" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+<div class="row" style="width:100%;height:fit-content;background-color:#EFDFBB;padding-left:10%;padding-right:10%;padding-top:2%;    margin: 0%;">
+
+  <h1 style="font-weight: 600;font-family: 'Edu NSW ACT Foundation', cursive;    letter-spacing: -2px;">Food Category </h1>
+
+  <hr style="opacity:100%;width:20%; color:#FDA100;">
+  <div class="row" style="width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    justify-content: space-evenly;">
+    <div class="card" style="width: 25rem;overflow:hidden;">
+<img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/SouthIndian_a5ivgy" class="card-img-top image" alt="...">
+<h1 class="text-sub">Breakfast</h1>
+
+</div>
+<div class="card" style="width: 25rem;overflow:hidden;">
+  <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Biriyani_bohvze" class="card-img-top image" alt="...">
+<center>  <h1 class="text-sub" style="  left: 35%;">Lunch</h1></center>
+</div>
+<div class="card" style="width: 25rem;overflow:hidden;">
+  <img src="https://media.discordapp.net/attachments/642673377647263745/995613336945307690/image_6.png?width=676&height=676" class="card-img-top image " alt="...">
+  <h1 class="text-sub" style="top:35% !important;text-align:center;left:25% !important">Snacks <br>&<br> Beverages</h1>
+</div>
+
+  </div>
+
+
+</div>
+
+
+
+<div class="row" style="width:100%;height:fit-content;display:flex;flex-direction:row;justify-content: space-around;padding-left:10%;padding-right:10%;padding-top:2%;">
+
+<h1 style="font-family: 'Great Vibes', cursive;font-weight:600">Snacks</h1>
+<hr style="opacity:100%;color:#FDA100;width:100%;">
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+ <div class="row" style="width:100%;height:fit-content;display:flex;flex-direction:row;justify-content: space-around;padding-left:10%;padding-right:10%;padding-top:2%;">
+
+<h1 style="font-family: 'Great Vibes', cursive;font-weight:600">Breakfast</h1>
+<hr style="opacity:100%;color:#FDA100;width:100%;">
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+    <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+      <p class="card-text" style="    font-weight: 600;">
+       <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+        Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+        Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+      </p>
+      <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="width:100%;height:fit-content;display:flex;flex-direction:row;justify-content: space-around;padding-left:10%;padding-right:10%;padding-top:2%;">
+
+<h1 style="font-family: 'Great Vibes', cursive;font-weight:600">Lunch</h1>
+<hr style="opacity:100%;color:#FDA100;width:100%;">
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+</div>
+
+<div class="row" style="width:100%;height:fit-content;display:flex;flex-direction:row;justify-content: space-around;padding-left:10%;padding-right:10%;padding-top:2%;">
+
+<h1 style="font-family: 'Great Vibes', cursive;font-weight:600">Beverages</h1>
+<hr style="opacity:100%;color:#FDA100;width:100%;">
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://cdn.discordapp.com/attachments/642673377647263745/997485457686396998/unknown.png" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+ <div class="card" style="width: 18rem;margin:5%;margin-top:2%;">
+   <img src="https://media.discordapp.net/attachments/642673377647263745/997485932032839680/unknown.png?width=788&height=676" class="card-img-top" alt="...">
+   <div class="card-body">
+     <h4 style=" font-family: 'Great Vibes', cursive;font-weight:600">Dosa</h4>
+     <p class="card-text" style="    font-weight: 600;">
+      <img style="width:5%;" src="https://www.pngkey.com/png/detail/261-2619381_chitr-veg-symbol-svg-veg-and-non-veg.png" alt=""> <br>
+       Price:<span class="value" style="  font-weight:400 !important;"> 15Rs/per pice </span> <br>
+       Time:<span  class="value" style="  font-weight:400 !important;"> 20min(Max)</span>
+
+     </p>
+     <button style="width: -webkit-fill-available;   " type="button" class="btn btn-outline-success">Buy Now</button>
+   </div>
+ </div>
+</div>
+</body>
+
+<script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+ <script src="http://passarelliautomacao.com.br/js/tether-1.3.3/dist/js/tether.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script >
+
+// function open(){
+// const myModal = new bootstrap.Modal(document.getElementById(''), options);
+// console.log("helllo");
+// }
+
+
+// $(document).ready(function(){
+//   function showmodal(){
+//     $('#modal-dialog1').show();
+//     console.log("hello");
+//   }
+//   setTimeout(showmodal,3000);
+// })
+
+
+
+
+</script>
+</html>

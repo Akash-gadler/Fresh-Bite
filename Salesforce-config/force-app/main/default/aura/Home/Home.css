@@ -1,0 +1,13 @@
+.THIS .slds-carousel__content {
+    display:none !important;
+}
+.THIS .slds-icon_container {
+    display:none !important;
+}
+.THIS.slds-button--icon-border-filled {
+    background-color: var(--lwc-buttonColorBackgroundPrimary,rgb(255, 255, 255/0%)) !important;
+}
+   .THIS.uiTabset--default .tabs__item.active>a
+        {
+            border-color: var(--lwc-brandPrimary,rgb(255, 152, 0,1));
+        }
